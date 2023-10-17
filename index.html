@@ -258,12 +258,9 @@
     
                 let grid;
                 let controls;
-                const wheels = [];
                 let model;
                 function init() {
-    
                     const container = document.getElementById( 'container-car' );
-    
                     renderer = new THREE.WebGLRenderer( { antialias: true,alpha: true } );
                     renderer.setPixelRatio( window.devicePixelRatio );
                     renderer.setSize( window.innerWidth, window.innerHeight );
@@ -277,7 +274,7 @@
     
                     stats = new Stats();
                     if (window.innerWidth < 768) {
-                        camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 100 );
+                        camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.02, 80 );
                         camera.position.set( 2, 1, - 4.5 );
                     } else {
                         camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.1, 100 );
@@ -288,14 +285,12 @@
                     controls.maxDistance = 9;
                   
                     controls.target.set( 0, 0.5, 0 );
-                    controls.enableRotate = true; // Disable rotation
-    controls.enablePan = false; 
-    controls.maxPolarAngle = Math.PI / 2; // Lock rotation to only go up to 90 degrees (optional)
-
-// Lock rotation on the Y and Z axes
-controls.minPolarAngle = controls.maxPolarAngle; 
-controls.minAzimuthAngle = -Math.PI;
-controls.maxAzimuthAngle = Math.PI;
+                    controls.enableRotate = true; 
+                    controls.enablePan = false; 
+                    controls.maxPolarAngle = Math.PI / 2; 
+                    controls.minPolarAngle = controls.maxPolarAngle; 
+                    controls.minAzimuthAngle = -Math.PI;
+                    controls.maxAzimuthAngle = Math.PI;
                     controls.update();
     
                     scene = new THREE.Scene();
@@ -305,9 +300,9 @@ controls.maxAzimuthAngle = Math.PI;
                     scene.fog = new THREE.Fog( 0x333333, 10, 15 );
     
                     grid = new THREE.GridHelper( 20, 40, 0xffffff, 0xdfffcf );
-                    // grid.material.opacity = 0.2;
-                    // grid.material.depthWrite = false;
-                    // grid.material.transparent = true;
+                    grid.material.opacity = 0.2;
+                    grid.material.depthWrite = false;
+                    grid.material.transparent = true;
                     scene.add( grid );
     
                     // materials
@@ -341,32 +336,15 @@ controls.maxAzimuthAngle = Math.PI;
                 }
     
                 function render() {
-    
                     controls.update();
-    
                     const time = - performance.now() / 1000;
-    
-                    // for ( let i = 0; i < wheels.length; i ++ ) {
-    
-                    //     wheels[ i ].rotation.x = time * Math.PI * 2;
-    
-                    // }
-    
-                    // grid.position.z = - ( time ) % 1;
-    
-                    // renderer.render( scene, camera );
-    
-                    // stats.update();
                     if(model){
-                    model.rotation.y = time * Math.PI * 0.15;
+                        model.rotation.y = time * Math.PI * 0.15;
                     } 
-grid.position.z = -time % 1;
-
-renderer.render(scene, camera);
-
-stats.update();
+                    grid.position.z = -time % 1;
+                    renderer.render(scene, camera);
+                    stats.update();
                 }
-    
                 init();
     
             </script>

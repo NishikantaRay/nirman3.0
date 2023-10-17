@@ -1346,14 +1346,23 @@ label {
   margin-top: 50px;
   position: absolute;
 }
+/* canvas {
+  overflow: scroll;
+} */
 
 @media only screen and (max-width: 600px) {
   .background-img {
     width: 100%;
     padding-left: 0;
-    margin-top: 28vh;
+    margin-top: 20vh;
     position: absolute;
   }
+  #container-car {
+    margin-top: -90px;
+  }
+  /* canvas {
+    overflow: scroll;
+  } */
 }
 
 /* 6. Banner */
