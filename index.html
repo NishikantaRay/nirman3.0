@@ -205,9 +205,17 @@
                 <span class="colorPicker" style="display: none;"><input id="glass-color" type="color" value="#ffffff"></input><br/>Glass</span>
             </div>
           
-            <button class="scroll-button " onclick="window.scrollBy(0, 500)"><i class="fas  fa-angle-down"></i></button>
+            <!-- <button class="scroll-button " onclick="window.scrollBy(0, 500)"><i class="fas  fa-angle-down"></i></button> -->
+            <a href="#" class="scroll-down" onclick="window.scrollBy(0, 500)" address="true"></a>
             <div id="container-car" style="position: absolute;"></div></div>
-           
+           <script>
+            $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('area-bg').offset().top }, 'slow');
+      return false;
+    });
+  });
+           </script>
             <!-- banner-area -->
             <!-- <div class="banner-bg-22">
                 <div id="parallax" class="banner-area banner-bg">

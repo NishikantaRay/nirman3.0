@@ -1346,7 +1346,9 @@ label {
   margin-top: 50px;
   position: absolute;
 }
-
+.scroll-button {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   .background-img {
     width: 100%;
@@ -1358,12 +1360,73 @@ label {
     margin-top: -90px;
   }
   .scroll-button {
+    display: block;
     margin-top: 60vh;
-    color: #1696e7;
+    color: #000;
+    background: #ff8503;
     position: absolute;
     z-index: 1;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .scroll-down {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in 3s;
+    transition: all 0.5s ease-in 3s;
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #fff;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    transform: scale(1);
+  }
+
+  .scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+  }
+
+  @keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+    60% {
+      -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
   }
 }
 
