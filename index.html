@@ -205,7 +205,7 @@
                 <span class="colorPicker" style="display: none;"><input id="glass-color" type="color" value="#ffffff"></input><br/>Glass</span>
             </div>
           
-
+            <button class="scroll-button " onclick="window.scrollBy(0, 500)"><i class="fas  fa-angle-down"></i></button>
             <div id="container-car" style="position: absolute;"></div></div>
            
             <!-- banner-area -->
@@ -259,6 +259,7 @@
                 let grid;
                 let controls;
                 let model;
+                
                 function init() {
                     const container = document.getElementById( 'container-car' );
                     renderer = new THREE.WebGLRenderer( { antialias: true,alpha: true } );
@@ -269,7 +270,7 @@
                     renderer.toneMappingExposure = 0.85;
                     renderer.setClearColor(0x000000, 0);
                     container.appendChild( renderer.domElement );
-    
+                    
                     window.addEventListener( 'resize', onWindowResize );
     
                     stats = new Stats();
@@ -283,14 +284,15 @@
     
                     controls = new OrbitControls( camera, container );
                     controls.maxDistance = 9;
-                  
                     controls.target.set( 0, 0.5, 0 );
+                    controls.enableZoom=false;
                     controls.enableRotate = true; 
                     controls.enablePan = false; 
                     controls.maxPolarAngle = Math.PI / 2; 
                     controls.minPolarAngle = controls.maxPolarAngle; 
                     controls.minAzimuthAngle = -Math.PI;
                     controls.maxAzimuthAngle = Math.PI;
+                    
                     controls.update();
     
                     scene = new THREE.Scene();
@@ -342,11 +344,14 @@
                         model.rotation.y = time * Math.PI * 0.15;
                     } 
                     grid.position.z = -time % 1;
+                   
                     renderer.render(scene, camera);
                     stats.update();
                 }
+
+               
+
                 init();
-    
             </script>
             <!-- banner-area-end -->
 

@@ -1346,9 +1346,6 @@ label {
   margin-top: 50px;
   position: absolute;
 }
-/* canvas {
-  overflow: scroll;
-} */
 
 @media only screen and (max-width: 600px) {
   .background-img {
@@ -1360,9 +1357,14 @@ label {
   #container-car {
     margin-top: -90px;
   }
-  /* canvas {
-    overflow: scroll;
-  } */
+  .scroll-button {
+    margin-top: 60vh;
+    color: #1696e7;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /* 6. Banner */
