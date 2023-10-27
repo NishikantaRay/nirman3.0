@@ -2,7 +2,7 @@
 <html lang="en">
 
 
-<!-- Mirrored from madebydesignesia.com/themes/playhost/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 18:34:05 GMT -->
+<!-- Mirrored from madebydesignesia.com/themes/playhost/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 18:34:10 GMT -->
 <head>
     <title>Playhost - Game Hosting Website Template</title>
     <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
@@ -106,79 +106,98 @@
         <!-- content begin -->
         <div class="no-bottom no-top" id="content">
             <div id="top"></div>
-            <!-- section begin -->
-            <section id="subheader" class="jarallax">
-                <img src="images/background/subheader-contact.webp" class="jarallax-img" alt="">
+            
+            <section class="v-center jarallax">
+                <div class="de-gradient-edge-top"></div>
+                <div class="de-gradient-edge-bottom"></div>
+                <img src="images/background/5.webp" class="jarallax-img" alt="">
                 <div class="container z-1000">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="subtitle wow fadeInUp mb-3">Do you have</div>
-                        </div>
-                        <div class="col-lg-6">
-                            <h2 class="wow fadeInUp mb20" data-wow-delay=".2s">Any questions?</h2>
-                        </div>                 
-                    </div>
-                </div>
-            </section>
-            <!-- section close -->
+                        <div class="row align-items-center">
+                            <div class="col-lg-8 offset-lg-2">
+                                <div class="p-5 rounded-10 shadow-soft bg-dark-1">
+                                    <form name="contactForm" id='contact_form' class="form-border" method="post" action='#'>
+                                        <h4>Don't have an account? Register now.</h4>
+                                        <p>Welcome to Plahost. We're excited to have you on board. By creating an account with us, you'll gain access to a range of benefits and convenient features that will enhance your car rental experience.</p>
+                                        <div class="row">
 
-            <section>
-                <div class="container position-relative z1000">
-                    <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field-set">
+                                                    <label>Name:</label>
+                                                    <input type='text' name='name' id='name' class="form-control">
+                                                </div>
+                                            </div>
 
-                        <div class="col-lg-10 offset-lg-1">
+                                            <div class="col-md-6">
+                                                <div class="field-set">
+                                                    <label>Email Address:</label>
+                                                    <input type='text' name='email' id='email' class="form-control">
+                                                </div>
+                                            </div>
 
-                            <p class="lead">
-                            Please read our <a href="faq.html">faq page</a> first. 
-                            If you got any questions, please do not hestitae to send us a message.
-                            </p>
+                                            <div class="col-md-6">
+                                                <div class="field-set">
+                                                    <label>Choose a Username:</label>
+                                                    <input type='text' name='username' id='username' class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="field-set">
+                                                    <label>Phone:</label>
+                                                    <input type='text' name='phone' id='phone' class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="field-set">
+                                                    <label>Password:</label>
+                                                    <input type='text' name='password' id='password' class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="field-set">
+                                                    <label>Re-enter Password:</label>
+                                                    <input type='text' name='re-password' id='re-password' class="form-control">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 offset-lg-3 text-center">
+                                                <div id='submit'>
+                                                    <input type='submit' id='send_message' value='Register Now' class="btn-main color-2">
+                                                </div>
+                                            </div>
 
 
-                            <form name="contactForm" id="contact_form" class="position-relative z1000" method="post" action="#">
-                                <div class="row gx-4">
-                                    <div class="col-lg-6 mb10">
-                                        <div class="field-set">
-                                            <span class="d-label">Name</span>
-                                            <input type="text" name="Name" id="name" class="form-control" placeholder="Your Name" required>
+                                            <div class="col-md-12">
+
+                                                <div id='mail_success' class='success'>Your message has been sent successfully.</div>
+                                                <div id='mail_fail' class='error'>Sorry, error occured this time sending your message.</div>
+                                                <div class="clearfix"></div>
+
+                                            </div>
+
+                                            <div class="col-lg-6 offset-lg-3">
+                                                <div class="title-line">Or&nbsp;sign&nbsp;up&nbsp;with</div>
+                                                <div class="row g-2">
+                                                    <div class="col-lg-6">
+                                                        <a class="btn-sc btn-fullwidth mb10" href="#"><img src="images/svg/google_icon.svg" alt="">Google</a>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <a class="btn-sc btn-fullwidth mb10" href="#"><img src="images/svg/facebook_icon.svg" alt="">Facebook</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
-
-                                        <div class="field-set">
-                                            <span class="d-label">Email</span>
-                                            <input type="text" name="Email" id="email" class="form-control" placeholder="Your Email" required>
-                                        </div>
-
-                                        <div class="field-set">
-                                            <span class="d-label">Phone</span>
-                                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone" required>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-6">
-                                        <div class="field-set mb20">
-                                            <span class="d-label">Message</span>
-                                            <textarea name="message" id="message" class="form-control" placeholder="Your Message" required></textarea>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
-                                    
-                                
-                                <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6"></div>
-                                <div id='submit' class="mt20">
-                                    <input type='submit' id='send_message' value='Send Message' class="btn-main">
-                                </div>
-
-                                <div id="success_message" class='success'>
-                                    Your message has been sent successfully. Refresh this page if you want to send more messages.
-                                </div>
-                                <div id="error_message" class='error'>
-                                    Sorry there was an error sending your form.
-                                </div>
-                            </form>
-
                             </div>
+                        </div>
                     </div>
-                </div>
             </section>
+
+            
 
         </div>
         <!-- content close -->
@@ -278,12 +297,9 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/designesia.js"></script>
-    <script src='../../../www.google.com/recaptcha/api.js' async defer></script>
-    <script src="form.js"></script>
-    <script src="recaptcha.html"></script>
-   
+    <script src="js/custom-marquee.js"></script>
 </body>
 
 
-<!-- Mirrored from madebydesignesia.com/themes/playhost/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 18:34:06 GMT -->
+<!-- Mirrored from madebydesignesia.com/themes/playhost/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Oct 2023 18:34:10 GMT -->
 </html>
