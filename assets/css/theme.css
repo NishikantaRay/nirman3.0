@@ -9623,7 +9623,7 @@ h2.h2-super.theme-preview-hero-h2 {
   /* Add your mobile-specific CSS here */
   .wtt {
     /* Mobile styles */
-    margin-bottom: -60vw;
+    margin-bottom: -80vw;
   }
 }
 
@@ -9632,6 +9632,6 @@ h2.h2-super.theme-preview-hero-h2 {
   /* Add your laptop-specific CSS here */
   .wtt {
     /* Laptop styles */
-    margin-bottom: -20vw;
+    margin-bottom: -40vw;
   }
 }
