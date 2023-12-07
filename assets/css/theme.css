@@ -9043,3 +9043,19 @@ h2.h2-super.theme-preview-hero-h2 {
 .sf-error-message {
 	color: #ff6371;
 }
+
+@media all and (max-width: 767px) { /* Mobile */
+	/* Add your mobile-specific CSS here */
+	.wtt {
+		/* Mobile styles */
+		margin-bottom: -60vw;
+	}
+}
+
+@media all and (min-width: 768px) { /* Laptop */
+	/* Add your laptop-specific CSS here */
+	.wtt {
+		/* Laptop styles */
+		margin-bottom: -20vw;
+	}
+}
