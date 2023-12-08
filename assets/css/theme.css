@@ -85,9 +85,22 @@
   background-image: url(../images/left.svg);
 }
 
-.mcurtain-center {
-  background-image: url(../images/mobile-center.png);
-  left: 33.333%;
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  /* Add your mobile-specific styles here */
+  .mcurtain-center {
+    background-image: url(../images/mobile-center.png);
+    left: 33.333%;
+  }
+}
+
+/* Laptop Styles */
+@media only screen and (min-width: 768px) {
+  /* Add your laptop-specific styles here */
+  .mcurtain-center {
+    background-image: url(../images/center.png);
+    left: 33.333%;
+  }
 }
 
 .mcurtain-right {
