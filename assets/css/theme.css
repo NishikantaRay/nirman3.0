@@ -90,10 +90,10 @@
   }
   .mcurtain-left {
     left: 0;
-    background-image: url(../images/curtain-background-left.svg);
+    background-image: url(../images/left.svg);
   }
   .mcurtain-right {
-    background-image: url(../images/curtain-background-right.svg);
+    background-image: url(../images/right.jpeg);
     left: 66.666%;
   }
 }
