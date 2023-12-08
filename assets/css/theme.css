@@ -84,7 +84,7 @@
 @media only screen and (max-width: 767px) {
   /* Add your mobile-specific styles here */
   .mcurtain-center {
-    background-image: url(../images/curtain-background-center.png);
+    background-image: url(../images/mobile-center.png);
 
     left: 33.333%;
   }
