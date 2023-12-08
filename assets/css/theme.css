@@ -80,17 +80,21 @@
   opacity: 1;
 }
 
-.mcurtain-left {
-  left: 0;
-  background-image: url(../images/left.svg);
-}
-
 /* Mobile Styles */
 @media only screen and (max-width: 767px) {
   /* Add your mobile-specific styles here */
   .mcurtain-center {
-    background-image: url(../images/mobile-center.png);
+    background-image: url(../images/curtain-background-center.png);
+
     left: 33.333%;
+  }
+  .mcurtain-left {
+    left: 0;
+    background-image: url(../images/curtain-background-left.svg);
+  }
+  .mcurtain-right {
+    background-image: url(../images/curtain-background-right.svg);
+    left: 66.666%;
   }
 }
 
@@ -101,11 +105,14 @@
     background-image: url(../images/center.png);
     left: 33.333%;
   }
-}
-
-.mcurtain-right {
-  background-image: url(../images/right.jpeg);
-  left: 66.666%;
+  .mcurtain-right {
+    background-image: url(../images/right.jpeg);
+    left: 66.666%;
+  }
+  .mcurtain-left {
+    left: 0;
+    background-image: url(../images/left.svg);
+  }
 }
 
 .sk__master-curtain {

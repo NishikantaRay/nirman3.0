@@ -141,6 +141,7 @@ $(document).ready(function () {
       stagger: masterCurtainStagger,
       ease: "power2.in",
     });
+
     setTimeout(function () {
       $(".sk__master-curtain").detach();
     }, (effectsMasterDelay + 0.7) * 1000);
