@@ -9754,11 +9754,6 @@ main {
   }
 }
 
-
-
-
-
-
 a {
   transition: all 0.2s ease-in-out;
   color: #009688;
@@ -9957,3 +9952,4 @@ img::-moz-selection {
     margin-bottom: 1rem;
   }
 }
+
