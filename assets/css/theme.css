@@ -5268,7 +5268,15 @@ span.numbers-deco {
 .about-right-image {
   background-image: url(../images/aboutus.png);
 }
-
+.about-right-image-1 {
+  background-image: url(../images/rr.png);
+}
+.about-right-image-2 {
+  background-image: url(../images/lf.png);
+}
+.about-right-image-3 {
+  background-image: url(../images/rs.png);
+}
 .custom-about-us-p2 {
   max-width: 320px;
   width: 100%;
@@ -5410,7 +5418,7 @@ span.numbers-deco {
 }
 
 .partner.partner-1 {
-  background-image: url(../images/partner-1.png);
+  background-image: url(../images/logos/njk.png);
 }
 .partner.partner-2 {
   background-image: url(../images/partner-2.png);
@@ -9952,4 +9960,3 @@ img::-moz-selection {
     margin-bottom: 1rem;
   }
 }
-
